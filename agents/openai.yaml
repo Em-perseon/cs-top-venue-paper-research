@@ -1,0 +1,4 @@
+interface:
+  display_name: "CS Top Venue Paper Research"
+  short_description: "Recent CS venue and high-recall paper research"
+  default_prompt: "Use $cs-top-venue-paper-research to find recent AI/ML, NLP, and DB/Data Mining papers from top venues, submissions, workshops, and preprints on retrieval-augmented generation, keeping evidence tiers separate."

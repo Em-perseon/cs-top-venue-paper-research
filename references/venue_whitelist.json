@@ -1,0 +1,289 @@
+{
+  "version": "2026-05-05",
+  "default_mode": "broad",
+  "default_tracks": ["ml", "nlp", "dbdm"],
+  "modes": {
+    "strict": "Smallest high-precision set, anchored in CCF A and widely accepted elite venues.",
+    "broad": "Higher-recall set for comprehensive AI/ML, NLP, and DB/Data Mining research; includes field-core venues that may be CCF B or not listed in older CCF editions."
+  },
+  "tracks": {
+    "ml": {
+      "label": "AI/ML",
+      "venues": [
+        {
+          "name": "NeurIPS",
+          "aliases": ["NIPS", "Conference on Neural Information Processing Systems"],
+          "type": "conference",
+          "mode": "strict",
+          "sources": ["https://dblp.org/db/conf/nips/", "https://proceedings.neurips.cc/"]
+        },
+        {
+          "name": "ICML",
+          "aliases": ["International Conference on Machine Learning"],
+          "type": "conference",
+          "mode": "strict",
+          "sources": ["https://dblp.org/db/conf/icml/", "https://proceedings.mlr.press/"]
+        },
+        {
+          "name": "ICLR",
+          "aliases": ["International Conference on Learning Representations"],
+          "type": "conference",
+          "mode": "broad",
+          "sources": ["https://dblp.org/db/conf/iclr/", "https://openreview.net/group?id=ICLR.cc"],
+          "submission_sources": ["https://openreview.net/group?id=ICLR.cc/{year}/Conference"]
+        },
+        {
+          "name": "AAAI",
+          "aliases": ["AAAI Conference on Artificial Intelligence"],
+          "type": "conference",
+          "mode": "strict",
+          "sources": ["https://dblp.org/db/conf/aaai/", "https://ojs.aaai.org/index.php/AAAI"]
+        },
+        {
+          "name": "IJCAI",
+          "aliases": ["International Joint Conference on Artificial Intelligence"],
+          "type": "conference",
+          "mode": "strict",
+          "sources": ["https://dblp.org/db/conf/ijcai/", "https://www.ijcai.org/proceedings/"]
+        },
+        {
+          "name": "AISTATS",
+          "aliases": ["International Conference on Artificial Intelligence and Statistics"],
+          "type": "conference",
+          "mode": "broad",
+          "sources": ["https://dblp.org/db/conf/aistats/", "https://proceedings.mlr.press/"]
+        },
+        {
+          "name": "UAI",
+          "aliases": ["Conference on Uncertainty in Artificial Intelligence"],
+          "type": "conference",
+          "mode": "broad",
+          "sources": ["https://dblp.org/db/conf/uai/"]
+        },
+        {
+          "name": "COLT",
+          "aliases": ["Conference on Learning Theory"],
+          "type": "conference",
+          "mode": "broad",
+          "sources": ["https://dblp.org/db/conf/colt/", "https://proceedings.mlr.press/"]
+        },
+        {
+          "name": "JMLR",
+          "aliases": ["Journal of Machine Learning Research"],
+          "type": "journal",
+          "mode": "strict",
+          "sources": ["https://dblp.org/db/journals/jmlr/", "https://www.jmlr.org/"]
+        },
+        {
+          "name": "Artificial Intelligence",
+          "aliases": ["AIJ", "AI"],
+          "type": "journal",
+          "mode": "strict",
+          "sources": ["https://dblp.org/db/journals/ai/"]
+        },
+        {
+          "name": "TPAMI",
+          "aliases": ["IEEE Transactions on Pattern Analysis and Machine Intelligence", "PAMI"],
+          "type": "journal",
+          "mode": "strict",
+          "sources": ["https://dblp.org/db/journals/pami/"]
+        },
+        {
+          "name": "JAIR",
+          "aliases": ["Journal of Artificial Intelligence Research"],
+          "type": "journal",
+          "mode": "broad",
+          "sources": ["https://dblp.org/db/journals/jair/"]
+        }
+      ]
+    },
+    "nlp": {
+      "label": "NLP",
+      "venues": [
+        {
+          "name": "ACL",
+          "aliases": ["Annual Meeting of the Association for Computational Linguistics"],
+          "type": "conference",
+          "mode": "strict",
+          "sources": ["https://dblp.org/db/conf/acl/", "https://aclanthology.org/events/acl-2026/"]
+        },
+        {
+          "name": "EMNLP",
+          "aliases": ["Conference on Empirical Methods in Natural Language Processing"],
+          "type": "conference",
+          "mode": "broad",
+          "sources": ["https://dblp.org/db/conf/emnlp/", "https://aclanthology.org/events/emnlp-2026/"]
+        },
+        {
+          "name": "NAACL",
+          "aliases": ["North American Chapter of the Association for Computational Linguistics"],
+          "type": "conference",
+          "mode": "broad",
+          "sources": ["https://dblp.org/db/conf/naacl/", "https://aclanthology.org/"]
+        },
+        {
+          "name": "COLING",
+          "aliases": ["International Conference on Computational Linguistics"],
+          "type": "conference",
+          "mode": "broad",
+          "sources": ["https://dblp.org/db/conf/coling/", "https://aclanthology.org/"]
+        },
+        {
+          "name": "TACL",
+          "aliases": ["Transactions of the Association for Computational Linguistics"],
+          "type": "journal",
+          "mode": "strict",
+          "sources": ["https://dblp.org/db/journals/tacl/", "https://aclanthology.org/journals/tacl/"]
+        },
+        {
+          "name": "Computational Linguistics",
+          "aliases": ["CL"],
+          "type": "journal",
+          "mode": "broad",
+          "sources": ["https://dblp.org/db/journals/coling/", "https://aclanthology.org/journals/coli/"]
+        },
+        {
+          "name": "TASLP",
+          "aliases": ["IEEE/ACM Transactions on Audio, Speech, and Language Processing"],
+          "type": "journal",
+          "mode": "broad",
+          "sources": ["https://dblp.org/db/journals/taslp/"]
+        }
+      ]
+    },
+    "dbdm": {
+      "label": "DB/Data Mining",
+      "venues": [
+        {
+          "name": "SIGMOD",
+          "aliases": ["ACM SIGMOD", "ACM SIGMOD Conference"],
+          "type": "conference",
+          "mode": "strict",
+          "sources": ["https://dblp.org/db/conf/sigmod/"]
+        },
+        {
+          "name": "VLDB",
+          "aliases": ["PVLDB", "International Conference on Very Large Data Bases"],
+          "type": "conference",
+          "mode": "strict",
+          "sources": ["https://dblp.org/db/conf/vldb/", "https://www.vldb.org/pvldb/"]
+        },
+        {
+          "name": "ICDE",
+          "aliases": ["IEEE International Conference on Data Engineering"],
+          "type": "conference",
+          "mode": "strict",
+          "sources": ["https://dblp.org/db/conf/icde/"]
+        },
+        {
+          "name": "KDD",
+          "aliases": ["SIGKDD", "ACM SIGKDD Conference on Knowledge Discovery and Data Mining"],
+          "type": "conference",
+          "mode": "strict",
+          "sources": ["https://dblp.org/db/conf/kdd/"]
+        },
+        {
+          "name": "SIGIR",
+          "aliases": ["International ACM SIGIR Conference on Research and Development in Information Retrieval"],
+          "type": "conference",
+          "mode": "strict",
+          "sources": ["https://dblp.org/db/conf/sigir/"]
+        },
+        {
+          "name": "WWW",
+          "aliases": ["The Web Conference", "World Wide Web Conference", "WebConf"],
+          "type": "conference",
+          "mode": "broad",
+          "sources": ["https://dblp.org/db/conf/www/"]
+        },
+        {
+          "name": "WSDM",
+          "aliases": ["ACM International Conference on Web Search and Data Mining"],
+          "type": "conference",
+          "mode": "broad",
+          "sources": ["https://dblp.org/db/conf/wsdm/"]
+        },
+        {
+          "name": "CIKM",
+          "aliases": ["ACM International Conference on Information and Knowledge Management"],
+          "type": "conference",
+          "mode": "broad",
+          "sources": ["https://dblp.org/db/conf/cikm/"]
+        },
+        {
+          "name": "ICDM",
+          "aliases": ["IEEE International Conference on Data Mining"],
+          "type": "conference",
+          "mode": "broad",
+          "sources": ["https://dblp.org/db/conf/icdm/"]
+        },
+        {
+          "name": "PODS",
+          "aliases": ["ACM Symposium on Principles of Database Systems"],
+          "type": "conference",
+          "mode": "broad",
+          "sources": ["https://dblp.org/db/conf/pods/"]
+        },
+        {
+          "name": "TODS",
+          "aliases": ["ACM Transactions on Database Systems"],
+          "type": "journal",
+          "mode": "strict",
+          "sources": ["https://dblp.org/db/journals/tods/"]
+        },
+        {
+          "name": "TOIS",
+          "aliases": ["ACM Transactions on Information Systems"],
+          "type": "journal",
+          "mode": "strict",
+          "sources": ["https://dblp.org/db/journals/tois/"]
+        },
+        {
+          "name": "TKDE",
+          "aliases": ["IEEE Transactions on Knowledge and Data Engineering"],
+          "type": "journal",
+          "mode": "strict",
+          "sources": ["https://dblp.org/db/journals/tkde/"]
+        },
+        {
+          "name": "VLDBJ",
+          "aliases": ["The VLDB Journal"],
+          "type": "journal",
+          "mode": "strict",
+          "sources": ["https://dblp.org/db/journals/vldb/"]
+        },
+        {
+          "name": "TKDD",
+          "aliases": ["ACM Transactions on Knowledge Discovery from Data"],
+          "type": "journal",
+          "mode": "broad",
+          "sources": ["https://dblp.org/db/journals/tkdd/"]
+        }
+      ]
+    }
+  },
+  "source_priority": [
+    "DBLP",
+    "official proceedings",
+    "OpenReview",
+    "ACL Anthology",
+    "PMLR",
+    "Semantic Scholar",
+    "OpenAlex",
+    "Crossref",
+    "Unpaywall",
+    "arXiv",
+    "Papers With Code"
+  ],
+  "exclusion_terms": [
+    "workshop",
+    "tutorial",
+    "demo",
+    "poster",
+    "short paper",
+    "extended abstract",
+    "companion",
+    "challenge",
+    "shared task"
+  ]
+}
